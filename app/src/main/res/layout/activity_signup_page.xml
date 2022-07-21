@@ -1,8 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">   
     >
+    <!--회원가입-->
+    <!--아이디 입력 창-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationX="20dp"
+        android:translationY="72dp" />
+
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/box_little_round_rectangular"
+        android:translationX="20dp"
+        android:translationY="110dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="12sp"
+        android:translationX="26dp"
+        android:translationY="114dp" />
+    <!--중복확인 버튼-->
+
+    <Button
+        android:id="@+id/bt_idoverlap"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:background="@drawable/box_little_round_rectangular"
+        android:text="중복확인"
+        android:translationX="280dp"
+        android:translationY="110dp" />
+
+    <EditText
+        android:id="@+id/signup_pw"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/box_little_round_rectangular"
+        android:translationX="20dp"
+        android:translationY="170dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textSize="12sp"
+        android:translationX="26dp"
+        android:translationY="174dp" />
+
+
 </RelativeLayout>

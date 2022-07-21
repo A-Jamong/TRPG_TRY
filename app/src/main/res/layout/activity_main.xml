@@ -1,79 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
     <!-- ID -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="sans-serif-condensed"
         android:text="아이디"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="normal"
-        android:translationX="20dp"
+        android:translationX="24dp"
         android:translationY="152dp" />
     <!-- 아이디 입력 상자 -->
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="아이디를 입력해주세요"
         android:translationX="20dp"
-        android:translationY="170dp">
-
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="362dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:hint="아이디 입력"></android.support.design.widget.TextInputEditText>
-    </android.support.design.widget.TextInputLayout>
+        android:translationY="174dp" />
     <!-- 비밀번호 -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="sans-serif-condensed"
         android:text="비밀번호"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="normal"
-        android:translationX="20dp"
+        android:translationX="24dp"
         android:translationY="238dp" />
     <!-- 비밀번호 입력 상자 -->
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/input_pw"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요"
+        android:inputType="textPassword"
         android:translationX="20dp"
-        android:translationY="256dp">
-
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="362dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:hint="비밀번호 입력"></android.support.design.widget.TextInputEditText>
-    </android.support.design.widget.TextInputLayout>
+        android:translationY="260dp" />
     <!--로그인 버튼-->
+
     <Button
         android:id="@+id/loginbt"
-        android:layout_width="66dp"
-        android:layout_height="28dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:background="@drawable/box_round_rectangular"
         android:text="로그인"
-        android:textSize="12sp"
-        android:translationX="210dp"
-        android:translationY="338dp"
-        />
+        android:textSize="14sp"
+        android:translationX="200dp"
+        android:translationY="338dp" />
     <!--회원가입 버튼-->
     <Button
         android:id="@+id/signupbt"
-        android:layout_width="66dp"
-        android:layout_height="28dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:background="@drawable/box_round_rectangular"
         android:text="회원가입"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:translationX="290dp"
-        android:translationY="338dp"
-        />
+        android:translationY="338dp" />
 
 
 </RelativeLayout>
