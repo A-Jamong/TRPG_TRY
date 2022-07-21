@@ -1,16 +1,24 @@
 package com.example.trpg_try
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
 
-        // 이제 할 일 : 버튼 누르면 다음 화면 넘어가게
+        bt_signup.setOnClickListener {
+            val intent = Intent(this, signup_page::class.java)
+
+            startActivity(intent)
+
+        }
 
     }
 }

@@ -48,7 +48,7 @@
     <!--로그인 버튼-->
 
     <Button
-        android:id="@+id/loginbt"
+        android:id="@+id/bt_login"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/box_round_rectangular"
@@ -58,7 +58,7 @@
         android:translationY="338dp" />
     <!--회원가입 버튼-->
     <Button
-        android:id="@+id/signupbt"
+        android:id="@+id/bt_signup"
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:background="@drawable/box_round_rectangular"
